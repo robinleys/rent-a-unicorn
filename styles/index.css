@@ -17,10 +17,17 @@
 h1 {
     font-family: "UnicornCake";
     font-weight: normal;
-    color: var(--pink);
+    color: #b62472;
+    padding: 10px;
+    padding-bottom: 0px;
     margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 40px;
     text-align: center;
     font-size: 60px;
+}
+main {
+    text-align: center;
 }
 
 * {
@@ -94,17 +101,19 @@ nav ul li a:hover {
 footer {
     padding: 20px;
     background-color: white;
+    color: white;
     text-align: center;
 }
-
-.social-icons a img {
-    width: 40px;
-    margin: 0 10px;
-    transition: transform 0.3s;
+.social-icons {
+    margin-top: 15px;
 }
 
-.social-icons a img:hover {
-    transform: scale(1.2);
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    height: 30px;
 }
 
 .content-row {
