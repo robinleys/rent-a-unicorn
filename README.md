@@ -5,4 +5,4 @@ That all changed one day, when classmates Abdullah, Eefje, Ranayana and Robin en
 United in their mission of sharing a little bit of this magic with the rest of th e world, they founded Rent a Unicorn, a service that allows people to connect with unicorns, alicorns and pegasi while also keeping them safe. 
 
 Click below to join see more about our services and join our community of unicorn lovers!
-[placeholder] 
+https://main--rent-a-unicorn.netlify.app/

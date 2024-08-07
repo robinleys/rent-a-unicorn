@@ -18,12 +18,18 @@
     box-sizing: border-box;
 }
 
+
 h1 {
     font-family: "UnicornCake";
+    font-weight: normal;
+    color: #b62472;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 40px;
     text-align: center;
-    text-transform: uppercase;
-    margin-top: 3rem;
-    color: var(--pink);
+    font-size: 60px;
 }
 
 body {
@@ -300,7 +306,6 @@ footer {
     }
 }
 
-/* Modal styles */
 .modal {
     display: none;
     position: fixed;

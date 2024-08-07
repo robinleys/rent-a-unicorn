@@ -73,8 +73,8 @@ nav ul li a {
     color: black;
     text-decoration: none;
     font-size: 1.2em;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 5px 10px;
+    border-radius: 2px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -84,12 +84,13 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+
 h1 {
     font-family: "UnicornCake";
+    font-weight: normal;
+    color: #b62472;
     text-align: center;
-    text-transform: uppercase;
-    margin-top: 3rem;
-    color: var(--pink);
+    font-size: 50px;
 }
 
 h3 {
@@ -117,22 +118,7 @@ h3 {
 
 .session {}
 
-h1 {
-    position: relative;
-    max-width: max-content;
-    margin: 2rem auto 5rem auto;
-    color: #b62472;
-}
 
-h1::after {
-    content: "";
-    position: absolute;
-    width: 75%;
-    height: 5px;
-    background-color: #FF7EC2;
-    bottom: -2rem;
-    left: 25px;
-}
 
 .services-container {
     max-width: 1200px;
@@ -227,9 +213,6 @@ footer {
         width: 100%;
     }
 
-#navTab {
-    margin: 0 5px;
-}
 
 nav ul li {
     margin: 0 5px;
