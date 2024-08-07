@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'UnicornCake'; 
+    src: url('../fonts/Unicorn\ Cake.ttf'); 
+}
+
+:root {
+    --very-light-pink: #FFF0F5;
+    --white: #FFFFFF;
+    --pink: #b62472;
+    --very-dark-pink: #29141f;
+    --dark-pink: #5c2d45;
+    --light-pink: #FFE4F0;
+    --black: #000000;
+    --blue: #0000EE;
+}
+
+h1 {
+    font-family: "UnicornCake";
+    font-weight: normal;
+    color: var(--pink);
+    margin: 20px;
+    text-align: center;
+    font-size: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #FFE4F0;
+    color: black;
+    cursor: url('../images/unicornCursor.png'), auto;
+}
+
+header {
+    background-color: #FF7EC2;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 340px;
+}
+
+.logo {
+    text-align: center;
+    max-width: 100%;
+}
+
+.logo img {
+    max-height: 300px;
+    max-width: 100%;
+}
+
+nav {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 10px; 
+    border-radius: 2px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: #FF7EC2; 
+    color: white; 
+    cursor: pointer; 
+}
+
+footer {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.social-icons a img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+.content-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.content {
+    width: 60%;
+    margin: auto; /* Center align the content */
+}
+
+p {
+    text-align: justify;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.content img.content-image-right {
+    float: right;
+    margin: 20px 0 20px 20px;
+    width: 275px; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+.content img.content-image-left {
+    float: left;
+    margin: 20px 20px 20px 0;
+    width: 275px; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        width: 100%;
+        padding: 0 20px; 
+    }
+
+    .content img.content-image-right,
+    .content img.content-image-left {
+        float: none; 
+        display: block;
+        margin: 20px auto; 
+        width: 100%; 
+        max-width: 275px; 
+    }
+    .pagination a, .social-icons a {
+        margin: 0 5px;
+    }
+
+    /* .logo img {
+        height: 200px;
+    } */
+
+    nav ul li {
+        margin: 0 5px;
+    }
+    nav ul li a {
+        font-size: 1em; 
+        padding: 2px 2px; 
+    }
+}

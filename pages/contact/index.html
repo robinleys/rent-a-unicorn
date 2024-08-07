@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../styles/contactUs.css" rel="stylesheet">
+    <title>Contact Form</title>
+</head>
+<body>
+    <header role="banner">
+        <div class="logo">
+            <img src="../../images/UnicornLogoPink.png" alt="Rent a Unicorn">
+        </div>
+    </header>
+    <nav role="navigation">
+        <ul>
+            <li><a href="../../">Home</a></li>
+            <li><a href="../../pages/services/">Services</a></li>
+            <li><a href="../../pages/shop/">Shop</a></li>
+            <li><a href="../../pages/blog/">Blog</a></li>
+            <li><a href="../../pages/gallery/">Gallery</a></li>
+            <li><a href="../../pages/about-us/">About Us</a></li>
+            <li><a href="../../pages/contact/">Contact</a></li>
+        </ul>
+    </nav>
+    <main role="main">
+        <h1>Contact us</h1>
+        <img src="../../images/titleLine.png" alt="Line under title" height="40px" width="256px">
+        <div id="form">
+            <form role="form" action="https://formspree.io/f/mqazqbgg" method="POST">
+                <input type="text" name="first" placeholder="First Name" required>
+                <input type="text" name="last" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Email Adress" required>
+                <textarea rows="5" cols="60" name="message" placeholder="Enter text" autocomplete="off" required></textarea>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+        <a href="tel:123-456-7890p123">Or click here to call us!</a><br><br>
+    </main>
+    
+    <div id="googleMap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.882051402937!2d3.7335797760975558!3d51.03679914497378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3730ac0304975%3A0x374b843359bb442f!2sBeCode%20Gent!5e0!3m2!1sen!2sbe!4v1722523032024!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+<footer role="contentinfo">
+    <div class="social-icons">
+        <a href="#"><img src="../../images/youtube.png" alt="Redirect to YouTube"></a>
+        <a href="#"><img src="../../images/twitter.png" alt="Redirect to Twitter"></a>
+        <a href="#"><img src="../../images/instagram.png" alt="Redirect to Instagram"></a>
+    </div>
+</footer>
+</html>

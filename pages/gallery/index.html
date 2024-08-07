@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Unicorn - Blog</title>
+    <link href="../../styles/gallery.css" rel="stylesheet">
+    <link href="../../node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
+    <script src="../../node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+</head>
+
+<body>
+
+<header role="banner">
+    <div class="logo" aria-label="logo">
+        <img src="../../images/UnicornLogoPink.png" alt="Rent a Unicorn">
+    </div>
+</header>
+
+<nav role="navigation">
+    <ul>
+        <li><a href="../../">Home</a></li>
+        <li><a href="../../pages/services/">Services</a></li>
+        <li><a href="../../pages/shop/">Shop</a></li>
+        <li><a href="../../pages/blog/">Blog</a></li>
+        <li><a href="../../pages/gallery/">Gallery</a></li>
+        <li><a href="../../pages/about-us/">About Us</a></li>
+        <li><a href="../../pages/contact/">Contact</a></li>
+    </ul>
+</nav>
+
+<main role="main">
+    <h1>Gallery</h1>
+    <img src="../../images/titleLine.png" alt="Line under title" height="40px" width="256px">
+    <h2>2024</h2>
+    <div class="gallery">
+        <img src="../../images/unicornCake.jpg" alt="a cake with a unicorn on it" data-lightbox="UnicornCake" class="picture" height="150px" width="250px">
+        <img src="../../images/LaughingUnicorn.jpg" alt="a laughing unicorn" class="picture" height="150px" width="250px">
+        <img src="../../images/UnicornGirl.jpg" alt="a girl dressed up as an unicorn" class="picture" height="150px" width="250px">
+        <img src="../../images/unicornGirl2.jpg" alt="a girl dressed up as a unicorn" class="picture" height="150px" width="250px">
+        <img src="../../images/unicornBalloons.jpg" alt="a lot of unicorn balloons" class="picture" height="150px" width="250px">
+        <button type="button">view more></button>
+    </div>
+    <h2>2023</h2>
+    <div class="gallery">
+        <img src="../../images/girlRidingPony.jpg" alt="A girl dressed as unicorn riding on a pony" class="picture" height="150px" width="250px">
+        <img src="../../images/girlWhiteHorse.jpg" alt="A girl riding on a white horse" class="picture" height="150px" width="250px">
+        <img src="../../images/UnicornCake2.jpg" alt="a cake with a unicorn on it" class="picture" height="150px" width="250px">
+        <img src="../../images/unicornPlushies.jpg" alt="a pile of unicorn plushies" class="picture" height="150px" width="250px">
+        <img src="../../images/unicornWoods.jpg" alt="Unicorn with children dressed up as fairies" class="picture" height="150px" width="250px">
+        <button type="button">view more></button>
+    </div>
+</main>
+
+<footer role="contentinfo">
+    <div class="social-icons" aria-label="links to social media">
+        <a href="#"><img src="../../images/youtube.png" alt="Redirect to YouTube"></a>
+        <a href="#"><img src="../../images/twitter.png" alt="Redirect to Twitter"></a>
+        <a href="#"><img src="../../images/instagram.png" alt="Redirect to Instagram"></a>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the images and bind the click event
+    var imgs = document.getElementsByClassName("picture");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    for (var i = 0; i < imgs.length; i++) {
+        imgs[i].onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
